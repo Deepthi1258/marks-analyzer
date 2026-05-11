@@ -16,9 +16,9 @@ python marks_analyzer.py
 Enter marks: 75 82 90 60 88
 
 ----- RESULT -----
-Total Marks: 395
-Average: 79.0
-Highest: 90
-Lowest: 60
-Students above 80: 3
-Students below 50: 0
+- Total Marks: 395
+- Average: 79.0
+- Highest: 90
+- Lowest: 60
+- Students above 80: 3
+- Students below 50: 0
