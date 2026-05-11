@@ -1,0 +1,29 @@
+marks = list(map(int, input("Enter marks (space-separated): ").split()))
+
+total = sum(marks)
+average = total / len(marks)
+highest = max(marks)
+lowest = min(marks)
+
+above_80 = sum(1 for m in marks if m > 80)
+below_50 = sum(1 for m in marks if m < 50)
+
+print("\n----- RESULT -----")
+print("Total Marks:", total)
+print("Average:", round(average, 2))
+print("Highest:", highest)
+print("Lowest:", lowest)
+print("Students above 80:", above_80)
+print("Students below 50:", below_50)
+
+print("\nGrades:")
+for m in marks:
+    if m >= 90:
+        grade = "A"
+    elif m >= 75:
+        grade = "B"
+    elif m >= 50:
+        grade = "C"
+    else:
+        grade = "Fail"
+    print(m, "→", grade)
